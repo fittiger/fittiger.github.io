@@ -57,7 +57,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/01/03/前端加速基本方法/index.html">
 <meta property="og:site_name" content="老猫">
 <meta property="og:description" content="前端加速的一些基本方法">
-<meta property="og:updated_time" content="2016-01-03T09:20:15.289Z">
+<meta property="og:updated_time" content="2016-01-03T09:24:18.109Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端加速基本方法">
 <meta name="twitter:description" content="前端加速的一些基本方法">
@@ -278,20 +278,34 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>1.减少http请求<br>-使用css sprites<br>-内联图片 data:image<br>-图片地图<br>-将多个js css文件合并为一个文件</p>
-<p>2.使用内容发布网络<br>-cdn(服务器离用户更近)发布静态内容</p>
-<p>3.设置expire 头<br>-max-age 设置缓存时间 在服务器(apache)中设置 缓存静态文件</p>
-<p>4.压缩组件（js,css)<br>-减少解析时间</p>
-<p>5.将css文件置于顶部<head><br>-因为页面是一边加载一边呈现的。不妨在头部有可能会白屏或无样式。</head></p>
-<p>6.将js文件放在底部<br>-不然会阻塞页面内容的加载</p>
-<p>7.多使用外部css,js 少用内联<br>-因为会有机会被缓存。</p>
-<p>8.减少dns查找<br>-use keep-alive and less domain name(域名)</p>
-<p>9.精简javascript(移除空白，和注释)</p>
-<p>10.混淆javascript(将长变量名转换成短小的字符串)</p>
-<p>11.减少重定向</p>
-</blockquote>
-</span>
+        <span itemprop="articleBody"><h2 id="1-_u51CF_u5C11http_u8BF7_u6C42"><a href="#1-_u51CF_u5C11http_u8BF7_u6C42" class="headerlink" title="1.减少http请求"></a>1.减少http请求</h2><ul>
+<li>使用css sprites </li>
+<li>内联图片 data:image</li>
+<li>图片地图</li>
+<li>将多个js css文件合并为一个文件</li>
+</ul>
+<h2 id="2-_u4F7F_u7528_u5185_u5BB9_u53D1_u5E03_u7F51_u7EDC"><a href="#2-_u4F7F_u7528_u5185_u5BB9_u53D1_u5E03_u7F51_u7EDC" class="headerlink" title="2.使用内容发布网络"></a>2.使用内容发布网络</h2><ul>
+<li>cdn(服务器离用户更近)发布静态内容</li>
+</ul>
+<h2 id="3-_u8BBE_u7F6Eexpire__u5934"><a href="#3-_u8BBE_u7F6Eexpire__u5934" class="headerlink" title="3.设置expire 头"></a>3.设置expire 头</h2><ul>
+<li>max-age 设置缓存时间 在服务器(apache)中设置 缓存静态文件</li>
+</ul>
+<h2 id="4-_u538B_u7F29_u7EC4_u4EF6_uFF08js_2Ccss_29"><a href="#4-_u538B_u7F29_u7EC4_u4EF6_uFF08js_2Ccss_29" class="headerlink" title="4.压缩组件（js,css)"></a>4.压缩组件（js,css)</h2><ul>
+<li>减少解析时间</li>
+</ul>
+<h2 id="5-_u5C06css_u6587_u4EF6_u7F6E_u4E8E_u9876_u90E8"><a href="#5-_u5C06css_u6587_u4EF6_u7F6E_u4E8E_u9876_u90E8" class="headerlink" title="5.将css文件置于顶部"></a>5.将css文件置于顶部<head></head></h2><ul>
+<li>因为页面是一边加载一边呈现的。不妨在头部有可能会白屏或无样式。</li>
+</ul>
+<h2 id="6-_u5C06js_u6587_u4EF6_u653E_u5728_u5E95_u90E8"><a href="#6-_u5C06js_u6587_u4EF6_u653E_u5728_u5E95_u90E8" class="headerlink" title="6.将js文件放在底部"></a>6.将js文件放在底部</h2><ul>
+<li>不然会阻塞页面内容的加载</li>
+</ul>
+<h2 id="7-_u591A_u4F7F_u7528_u5916_u90E8css_2Cjs__u5C11_u7528_u5185_u8054"><a href="#7-_u591A_u4F7F_u7528_u5916_u90E8css_2Cjs__u5C11_u7528_u5185_u8054" class="headerlink" title="7.多使用外部css,js 少用内联"></a>7.多使用外部css,js 少用内联</h2><ul>
+<li>因为会有机会被缓存。</li>
+</ul>
+<h2 id="8-_u51CF_u5C11dns_u67E5_u627E"><a href="#8-_u51CF_u5C11dns_u67E5_u627E" class="headerlink" title="8.减少dns查找"></a>8.减少dns查找</h2><ul>
+<li>use keep-alive and less domain name(域名)</li>
+</ul>
+<h2 id="9-_u7CBE_u7B80javascript_28_u79FB_u9664_u7A7A_u767D_uFF0C_u548C_u6CE8_u91CA_29"><a href="#9-_u7CBE_u7B80javascript_28_u79FB_u9664_u7A7A_u767D_uFF0C_u548C_u6CE8_u91CA_29" class="headerlink" title="9.精简javascript(移除空白，和注释)"></a>9.精简javascript(移除空白，和注释)</h2><h2 id="10-_u6DF7_u6DC6javascript_28_u5C06_u957F_u53D8_u91CF_u540D_u8F6C_u6362_u6210_u77ED_u5C0F_u7684_u5B57_u7B26_u4E32_29"><a href="#10-_u6DF7_u6DC6javascript_28_u5C06_u957F_u53D8_u91CF_u540D_u8F6C_u6362_u6210_u77ED_u5C0F_u7684_u5B57_u7B26_u4E32_29" class="headerlink" title="10.混淆javascript(将长变量名转换成短小的字符串)"></a>10.混淆javascript(将长变量名转换成短小的字符串)</h2><h2 id="11-_u51CF_u5C11_u91CD_u5B9A_u5411"><a href="#11-_u51CF_u5C11_u91CD_u5B9A_u5411" class="headerlink" title="11.减少重定向"></a>11.减少重定向</h2></span>
       
     </div>
 
@@ -451,7 +465,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u51CF_u5C11http_u8BF7_u6C42"><span class="nav-number">1.</span> <span class="nav-text">1.减少http请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u4F7F_u7528_u5185_u5BB9_u53D1_u5E03_u7F51_u7EDC"><span class="nav-number">2.</span> <span class="nav-text">2.使用内容发布网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u8BBE_u7F6Eexpire__u5934"><span class="nav-number">3.</span> <span class="nav-text">3.设置expire 头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-_u538B_u7F29_u7EC4_u4EF6_uFF08js_2Ccss_29"><span class="nav-number">4.</span> <span class="nav-text">4.压缩组件（js,css)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-_u5C06css_u6587_u4EF6_u7F6E_u4E8E_u9876_u90E8"><span class="nav-number">5.</span> <span class="nav-text">5.将css文件置于顶部</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-_u5C06js_u6587_u4EF6_u653E_u5728_u5E95_u90E8"><span class="nav-number">6.</span> <span class="nav-text">6.将js文件放在底部</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-_u591A_u4F7F_u7528_u5916_u90E8css_2Cjs__u5C11_u7528_u5185_u8054"><span class="nav-number">7.</span> <span class="nav-text">7.多使用外部css,js 少用内联</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-_u51CF_u5C11dns_u67E5_u627E"><span class="nav-number">8.</span> <span class="nav-text">8.减少dns查找</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-_u7CBE_u7B80javascript_28_u79FB_u9664_u7A7A_u767D_uFF0C_u548C_u6CE8_u91CA_29"><span class="nav-number">9.</span> <span class="nav-text">9.精简javascript(移除空白，和注释)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-_u6DF7_u6DC6javascript_28_u5C06_u957F_u53D8_u91CF_u540D_u8F6C_u6362_u6210_u77ED_u5C0F_u7684_u5B57_u7B26_u4E32_29"><span class="nav-number">10.</span> <span class="nav-text">10.混淆javascript(将长变量名转换成短小的字符串)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-_u51CF_u5C11_u91CD_u5B9A_u5411"><span class="nav-number">11.</span> <span class="nav-text">11.减少重定向</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
